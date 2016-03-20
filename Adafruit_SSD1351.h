@@ -17,7 +17,7 @@
  ****************************************************/
 
 #define SSD1351WIDTH 128
-#define SSD1351HEIGHT 128  // SET THIS TO 96 FOR 1.27"!
+#define SSD1351HEIGHT 96  // SET THIS TO 96 FOR 1.27"!
 
 #define swap(a, b) { uint16_t t = a; a = b; b = t; }
 
@@ -31,8 +31,8 @@
     typedef volatile RwReg PortReg;
     typedef uint32_t PortMask;
 #else
-    typedef volatile uint8_t PortReg;
-    typedef uint8_t PortMask;
+    typedef volatile uint32_t PortReg;
+    typedef uint32_t PortMask;
 #endif
 
 // Select one of these defines to set the pixel color order
